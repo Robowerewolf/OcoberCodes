@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std; 
+int x, y, n;
+int main() {
+	cout << "give me 3 numbers" << endl;
+	cin >> x;
+	cin >> y;
+	cin >> n;
+
+	cout << endl << endl;
+	for (int i = 1; i <= n; i++) {
+		
+		if (i % x == 0 && i% y == 0)
+			cout << "fizzbuzz" << endl;
+		else if (i % y == 0)
+			cout << "buzz" << endl;
+		else if (i % x == 0)
+			cout << "fizz" << endl;
+		else
+			cout << i << endl;;
+	}
+}
